@@ -22,7 +22,7 @@
 
 .hero-badge {
   display: inline-block;
-  color: var(--blue-500);
+  color: var(--primary-600);
   font-size: 0.95rem;
   font-weight: 500;
   margin-bottom: 0.5rem;
@@ -31,7 +31,7 @@
   font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.1;
-  color: white;
+  color: var(--text-primary);
   margin-bottom: 1rem;
   min-height: 3.5em;
 }
@@ -40,14 +40,14 @@
 .hero-subtitle {
   font-size: 1.25rem;
   font-weight: 600;
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: linear-gradient(135deg, var(--primary-600), var(--accent-600));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 1.25rem;
 }
 .hero-desc {
-  color: #d1d5db;
+  color: var(--text-secondary);
   max-width: 32rem;
   font-size: 0.95rem;
   line-height: 1.7;
@@ -58,35 +58,35 @@
 .btn-primary {
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.625rem 1.25rem;
-  background: var(--blue-600); color: white;
+  background: var(--primary-600); color: white;
   border-radius: 0.5rem; font-weight: 500; font-size: 0.875rem;
   border: none;
   transition: background 0.2s ease, transform 0.2s ease;
 }
-.btn-primary:hover { background: #1d4ed8; transform: translateY(-1px); }
+.btn-primary:hover { background: var(--primary-500); transform: translateY(-1px); }
 
 .btn-outline {
   display: inline-flex; align-items: center; gap: 0.5rem;
   padding: 0.625rem 1.25rem;
-  border: 1px solid rgba(37,99,235,0.5); color: var(--blue-400);
+  border: 1px solid var(--primary-500); color: var(--primary-600);
   border-radius: 0.5rem; font-weight: 500; font-size: 0.875rem;
   background: transparent;
   text-decoration: none;
   transition: background 0.2s ease;
 }
-.btn-outline:hover { background: rgba(37,99,235,0.1); }
+.btn-outline:hover { background: rgba(217,119,6,0.06); }
 
 .social-row { display: flex; align-items: center; gap: 0.5rem; }
 .social-link {
   display: flex; align-items: center; justify-content: center;
   width: 2.5rem; height: 2.5rem;
   border-radius: 9999px;
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #9ca3af;
+  border: 1px solid rgba(26,24,22,0.15);
+  color: var(--text-secondary);
   text-decoration: none;
   transition: all 0.2s ease;
 }
-.social-link:hover { color: white; background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); }
+.social-link:hover { color: var(--text-primary); background: rgba(26,24,22,0.05); border-color: rgba(26,24,22,0.25); }
 
 .hero-img-wrap {
   order: 1;
@@ -104,15 +104,15 @@
 .profile-glow {
   position: absolute;
   inset: 0;
-  background: rgba(59,130,246,0.15);
+  background: rgba(217, 119, 6, 0.04);
   border-radius: 9999px;
   filter: blur(3rem);
 }
 .profile-card {
   position: relative;
-  background: rgba(31,41,55,0.5);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(26, 24, 22, 0.08);
   border-radius: 1rem;
   padding: 1rem;
   height: 100%;
@@ -132,10 +132,10 @@
   display: flex; align-items: center; justify-content: center;
   width: 2.5rem; height: 2.5rem;
   border-radius: 9999px;
-  border: 1px solid #374151;
-  background: rgba(31,41,55,0.5);
+  border: 1px solid rgba(26, 24, 22, 0.15);
+  background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(4px);
-  color: #9ca3af;
+  color: var(--text-secondary);
   animation: bounce 2s infinite;
 }
 @keyframes bounce {
@@ -147,7 +147,7 @@
   display: inline-block;
   width: 3px;
   height: 0.9em;
-  background: #3b82f6;
+  background: var(--primary-500);
   margin-left: 2px;
   vertical-align: middle;
   animation: blink 0.8s step-end infinite;

@@ -1,15 +1,21 @@
 
 :root {
-  --bg-950: #030712;
-  --bg-900: #111827;
-  --bg-800: #1f2937;
-  --bg-700: #374151;
-  --text-primary: #f9fafb;
-  --text-secondary: #9ca3af;
-  --text-muted: #6b7280;
-  --blue-600: #2563eb;
-  --blue-500: #3b82f6;
-  --blue-400: #60a5fa;
+  --bg-950: #F5F1EA;
+  --bg-900: #EDE9E0;
+  --bg-800: #DDD8CD;
+  --bg-700: #C7BFB2;
+  --text-primary: #1A1816;
+  --text-secondary: #5C5349;
+  --text-muted: #8A7F74;
+  --primary-600: #B45309;
+  --primary-500: #D97706;
+  --primary-400: #F59E0B;
+  --accent-600: #C2410C;
+  --accent-500: #EA580C;
+  --accent-400: #FB923C;
+  --blue-600: var(--primary-600);
+  --blue-500: var(--primary-500);
+  --blue-400: var(--primary-400);
   --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
 }
 
@@ -63,12 +69,12 @@ body {
 .section-title {
   font-size: 2rem;
   font-weight: 800;
-  color: white;
+  color: var(--text-primary);
   margin-bottom: 0.75rem;
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: linear-gradient(135deg, var(--primary-600), var(--accent-600));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -77,21 +83,21 @@ body {
 .title-divider {
   width: 3rem;
   height: 3px;
-  background: linear-gradient(to right, var(--blue-500), #8b5cf6);
+  background: linear-gradient(to right, var(--primary-500), var(--accent-500));
   border-radius: 9999px;
   margin: 0.75rem auto 3.5rem;
 }
 
 .glass-card {
-  background: rgba(31, 41, 55, 0.4);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(26, 24, 22, 0.08);
   border-radius: 0.75rem;
   transition: border-color 0.3s ease;
 }
 
 .glass-card:hover {
-  border-color: rgba(255, 255, 255, 0.15);
+  border-color: rgba(26, 24, 22, 0.15);
 }
 
 .badge {
@@ -106,18 +112,18 @@ body {
 }
 
 .badge-blue {
-  background: rgba(37, 99, 235, 0.1);
-  color: var(--blue-400);
-  border-color: rgba(37, 99, 235, 0.25);
+  background: rgba(217, 119, 6, 0.08);
+  color: var(--primary-600);
+  border-color: rgba(217, 119, 6, 0.2);
 }
 
 .badge-blue:hover {
-  background: rgba(37, 99, 235, 0.2);
+  background: rgba(217, 119, 6, 0.15);
 }
 
 .badge-yellow {
-  background: rgba(234, 179, 8, 0.1);
-  color: #facc15;
+  background: rgba(234, 179, 8, 0.08);
+  color: #b45309;
   border-color: rgba(234, 179, 8, 0.25);
 }
 

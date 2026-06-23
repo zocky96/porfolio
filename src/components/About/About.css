@@ -1,4 +1,4 @@
-#about { background: rgba(3,7,18,0.5); }
+#about { background: rgba(245, 241, 234, 0.5); }
 
 .about-grid {
   display: grid;
@@ -15,7 +15,7 @@
 }
 
 .about-text {
-  color: #d1d5db;
+  color: var(--text-secondary);
   line-height: 1.8;
   margin-bottom: 1.5rem;
 }
@@ -36,30 +36,30 @@
 .about-info-icon {
   padding: 0.5rem;
   border-radius: 0.5rem;
-  background: rgba(59, 130, 246, 0.1);
-  color: #60a5fa;
+  background: rgba(217, 119, 6, 0.08);
+  color: var(--primary-600);
   flex-shrink: 0;
 }
 
 .about-info-label {
   font-weight: 600;
-  color: white;
+  color: var(--text-primary);
   font-size: 0.875rem;
 }
 
 .about-info-value {
-  color: #9ca3af;
+  color: var(--text-secondary);
   font-size: 0.8rem;
 }
 
 .about-tags-section {
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
+  border-top: 1px solid rgba(26, 24, 22, 0.08);
   padding-top: 1.25rem;
 }
 
 .about-tags-heading {
   font-weight: 600;
-  color: white;
+  color: var(--text-primary);
   font-size: 0.875rem;
   margin-bottom: 0.75rem;
 }
@@ -77,14 +77,14 @@
 .about-edu-heading {
   font-size: 1.25rem;
   font-weight: 700;
-  color: white;
+  color: var(--text-primary);
   margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
 }
 
-.about-edu-icon { color: #a78bfa; }
+.about-edu-icon { color: var(--primary-500); }
 
 .about-edu-list {
   display: flex;
@@ -98,13 +98,13 @@
 
 .about-edu-degree {
   font-weight: 700;
-  color: white;
+  color: var(--text-primary);
   font-size: 1rem;
   margin-bottom: 0.25rem;
 }
 
 .about-edu-school {
-  color: #60a5fa;
+  color: var(--primary-600);
   font-size: 0.875rem;
   font-weight: 500;
   margin-bottom: 0.75rem;
@@ -114,14 +114,14 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.8rem;
-  color: #9ca3af;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--text-secondary);
+  border-top: 1px solid rgba(26, 24, 22, 0.06);
   padding-top: 0.75rem;
 }
 
 .about-edu-grade {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(26, 24, 22, 0.05);
   padding: 0.1rem 0.5rem;
   border-radius: 0.25rem;
-  color: #d1d5db;
+  color: var(--text-primary);
 }

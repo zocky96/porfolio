@@ -42,7 +42,7 @@ export default function App() {
       <div className={`loading-screen${loading ? '' : ' hidden'}`}>
         <div style={{ textAlign: 'center' }}>
           <div className="loading-spinner" style={{ margin: '0 auto 1.5rem' }} />
-          <h2 style={{ color: 'white', fontWeight: 700, fontSize: '1.25rem' }}>
+          <h2 style={{ color: 'var(--text-primary)', fontWeight: 700, fontSize: '1.25rem' }}>
             Chargement<span style={{ animation: 'blink 1s infinite' }}>...</span>
           </h2>
         </div>

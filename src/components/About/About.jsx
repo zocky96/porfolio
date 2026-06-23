@@ -9,14 +9,14 @@ const tags = [
 ];
 
 const education = [
-  { degree: 'UNASMOH Computer Science and Engineering', school: 'Universite Americaine des sciences moderne d\'haiti', date: 'Nov 2017 - Dec 2022', grade: '' },
+  { degree: 'Sciences et Génie Informatique (UNASMOH)', school: 'Universite Americaine des sciences moderne d\'haiti', date: 'Nov 2017 - Dec 2022', grade: '' },
   { degree: 'Secondaire', school: 'Lycee national philippe Guerrier', date: '2009 - 2016', grade: '' }
 ];
 
 const info = [
   { Icon: Mail, label: 'Email', value: 'desirrenaldo03@gmail.com' },
   { Icon: MapPin, label: 'Localisation', value: 'Cap-Haïtien, HAÏTI' },
-  { Icon: GraduationCap, label: 'Éducation', value: 'UNASMOH en Informatique' },
+  { Icon: GraduationCap, label: 'Éducation', value: 'Sciences et Génie Informatique (UNASMOH)' },
 ];
 
 export default function About() {

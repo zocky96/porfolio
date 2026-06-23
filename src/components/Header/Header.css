@@ -16,7 +16,9 @@
   transition: all 0.3s ease;
 }
 .site-header.scrolled {
-  background: transparent;
+  background: rgba(245, 241, 234, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(26, 24, 22, 0.06);
   padding: 0.75rem 0;
 }
 .header-inner {
@@ -28,12 +30,12 @@
   align-items: center;
 }
 .logo-btn {
-  background: none; border: none; color: white;
+  background: none; border: none; color: var(--text-primary);
   font-size: 1.25rem; font-weight: 700;
   letter-spacing: -0.02em;
 }
 .logo-btn .gradient-text {
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: linear-gradient(135deg, var(--primary-600), var(--accent-600));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -44,29 +46,29 @@
   gap: 0.25rem;
   padding: 0.25rem;
   border-radius: 9999px;
-  border: 1px solid rgba(255,255,255,0.07);
-  background: rgba(17,24,39,0.6);
+  border: 1px solid rgba(26, 24, 22, 0.08);
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(12px);
 }
 @media (min-width: 768px) { .nav-pill { display: flex; } }
 .nav-btn {
   position: relative;
   background: none; border: none;
-  color: #9ca3af;
+  color: var(--text-secondary);
   padding: 0.4rem 1rem;
   border-radius: 9999px;
   font-size: 0.8rem; font-weight: 500;
   transition: color 0.2s ease;
 }
-.nav-btn:hover { color: white; }
+.nav-btn:hover { color: var(--text-primary); }
 .nav-btn.active {
-  background: var(--blue-600);
+  background: var(--primary-600);
   color: white;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.3);
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.25);
 }
 .mobile-menu-btn {
   display: flex;
-  background: none; border: none; color: #9ca3af; padding: 0.5rem;
+  background: none; border: none; color: var(--text-secondary); padding: 0.5rem;
 }
 @media (min-width: 768px) { .mobile-menu-btn { display: none; } }
 
@@ -75,8 +77,8 @@
   top: 100%;
   left: 0;
   right: 0;
-  background: rgba(3, 7, 18, 0.97);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: rgba(245, 241, 234, 0.98);
+  border-bottom: 1px solid rgba(26, 24, 22, 0.08);
   backdrop-filter: blur(12px);
   padding: 0.5rem 1rem 1rem;
 }
@@ -88,14 +90,14 @@
   padding: 0.75rem 1rem;
   border: none;
   background: none;
-  color: #9ca3af;
+  color: var(--text-secondary);
   font-weight: 400;
   border-left: 2px solid transparent;
   font-size: 0.9rem;
   font-family: var(--font-sans);
 }
 .mobile-nav-btn.active {
-  color: #60a5fa;
+  color: var(--primary-600);
   font-weight: 600;
-  border-left: 2px solid #3b82f6;
+  border-left: 2px solid var(--primary-500);
 }

@@ -1,6 +1,6 @@
 .modal-overlay {
   position: fixed; inset: 0;
-  background: rgba(3,7,18,0.92);
+  background: rgba(245, 241, 234, 0.95);
   backdrop-filter: blur(8px);
   display: flex; align-items: center; justify-content: center;
   z-index: 99999;
@@ -18,8 +18,8 @@
   max-width: 90vw;
   max-height: 80vh;
   border-radius: 0.75rem;
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+  border: 1px solid rgba(26, 24, 22, 0.1);
+  box-shadow: 0 20px 50px rgba(26, 24, 22, 0.15);
   object-fit: contain;
 }
 .modal-close {
@@ -28,9 +28,9 @@
   width: 2.5rem; height: 2.5rem;
   border-radius: 9999px;
   background: var(--bg-800);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: #9ca3af;
+  border: 1px solid rgba(26, 24, 22, 0.1);
+  color: var(--text-secondary);
   display: flex; align-items: center; justify-content: center;
   transition: all 0.2s;
 }
-.modal-close:hover { color: white; background: var(--bg-700); }
+.modal-close:hover { color: var(--text-primary); background: var(--bg-700); }
