@@ -1,0 +1,122 @@
+#skills { background: rgba(17,24,39,0.3); }
+
+.skill-tabs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.25rem;
+  background: rgba(31,41,55,0.5);
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) { .skill-tabs { grid-template-columns: repeat(4, 1fr); } }
+
+.skill-tab {
+  display: flex; align-items: center; justify-content: center; gap: 0.5rem;
+  padding: 0.625rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem; font-weight: 500;
+  color: #9ca3af;
+  background: none; border: none;
+  transition: all 0.2s ease;
+}
+.skill-tab:hover { color: white; }
+.skill-tab.active {
+  background: var(--blue-600);
+  color: white;
+  box-shadow: 0 4px 14px rgba(37,99,235,0.3);
+}
+
+.skill-content-card {
+  padding: 2rem;
+}
+
+.skill-content-heading {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.skill-icon-blue { color: #60a5fa; }
+
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+}
+
+.skill-card {
+  padding: 1.25rem 1rem;
+  text-align: center;
+  transition: transform 0.2s, border-color 0.2s;
+  cursor: default;
+}
+.skill-card:hover {
+  border-color: rgba(59,130,246,0.35);
+  transform: scale(1.04);
+}
+
+.skill-card-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: rgba(59, 130, 246, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 0.75rem;
+  color: #60a5fa;
+}
+
+.skill-card-name {
+  font-weight: 600;
+  color: white;
+  font-size: 0.875rem;
+}
+
+.tools-card {
+  margin-top: 2.5rem;
+  padding: 1.5rem;
+  max-width: 48rem;
+  margin: 2.5rem auto 0;
+  border-color: rgba(59,130,246,0.1);
+}
+
+.tools-heading {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d1d5db;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tools-icon-purple { color: #a78bfa; }
+
+.tools-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tool-badge {
+  padding: 0.4rem 1rem;
+  background: rgba(31, 41, 55, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  color: #d1d5db;
+  transition: border-color 0.2s, color 0.2s;
+}
+.tool-badge:hover {
+  border-color: rgba(59, 130, 246, 0.35);
+  color: white;
+}
+
